@@ -149,6 +149,6 @@ AUTH_USER_MODEL = 'accounts.User'
 
 
 CORS_ALLOWED_ORIGINS = [
-    "http://127.0.0.1:5500",  # Your frontend origin
+    "http://127.0.0.1:5501",  # Your frontend origin
     "http://localhost:5500",   # Alternative
 ]
