@@ -1,5 +1,8 @@
 from django.urls import path
+
 from .views import RegisterView, MyTokenObtianPairView, ProfileView, ChangePasswordView
+from rest_framework import routers
+
 
 urlpatterns = [
 

@@ -1,13 +1,13 @@
 from django.shortcuts import render
 from  rest_framework.response import Response
-from  rest_framework import generics, permissions
+from  rest_framework import generics, permissions, viewsets, filters
 from .serializer import UserRegistrationSerializer
 from rest_framework_simplejwt.views import TokenObtainPairView
 from rest_framework import status
 from .serializer import MyTokenObtainPairSerializer, ProfileSerializer, ChangePasswordSerializer
 from django.contrib.auth import update_session_auth_hash
-
-
+from rest_framework.permissions import IsAdminUser, AllowAny
+from .models import User
 
 class RegisterView(generics.CreateAPIView):
     serializer_class = UserRegistrationSerializer
@@ -65,5 +65,5 @@ class ChangePasswordView(generics.UpdateAPIView):
         
 
 
+        fields = '__all__'
 
-       

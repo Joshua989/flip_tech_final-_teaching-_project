@@ -247,3 +247,22 @@ Live chat support (3rd party or Django Channels)
 4
 End of Project Work Document
 5
+
+
+
+
+pip install virtualenv
+python -m venv env
+env\scripts\activate
+pip install djangorestframework 
+django-admin startproject Fashionista .
+python manage.py startapp accounts
+
+
+http://127.0.0.1:8000/api/accounts/registration/
+pip install djangorestframework-simplejwt
+
+
+pip install -r requirements.txt
+
+

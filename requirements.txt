@@ -1,0 +1,29 @@
+# Core Requirements
+Django==4.2.7              # The web framework for perfectionists with deadlines
+djangorestframework==3.14.0  # Toolkit for building Web APIs
+djangorestframework-simplejwt==5.2.2  # JWT authentication for DRF
+Pillow==10.0.1             # Python Imaging Library (for image handling)
+
+# Database (SQLite included with Python, these are for potential production)
+psycopg2-binary==2.9.7     # PostgreSQL adapter (optional)
+mysqlclient==2.2.0         # MySQL adapter (optional)
+
+# Development Tools
+python-dotenv==1.0.0       # Environment variable support
+drf-yasg==1.21.5           # Swagger documentation (optional)
+django-cors-headers==4.2.0  # Handling CORS (needed for frontend connection)
+
+# Deployment
+gunicorn==21.2.0           # Production WSGI server
+whitenoise==6.5.0          # Static file serving for production
+dj-database-url==2.0.0     # Database URL configuration
+
+# Testing
+pytest==7.4.2              # Testing framework
+pytest-django==4.5.2       # Django test runner
+factory-boy==3.3.0         # Test data generation
+
+# Code Quality
+black==23.9.1              # Code formatter
+flake8==6.1.0              # Code linter
+isort==5.12.0              # Import sorter
