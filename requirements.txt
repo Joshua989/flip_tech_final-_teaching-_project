@@ -5,8 +5,6 @@ djangorestframework-simplejwt==5.2.2  # JWT authentication for DRF
 Pillow==10.0.1             # Python Imaging Library (for image handling)
 
 # Database (SQLite included with Python, these are for potential production)
-psycopg2-binary==2.9.7     # PostgreSQL adapter (optional)
-mysqlclient==2.2.0         # MySQL adapter (optional)
 
 # Development Tools
 python-dotenv==1.0.0       # Environment variable support
