@@ -153,3 +153,8 @@ CORS_ALLOWED_ORIGINS = [
     "http://127.0.0.1:5501",  # Your frontend origin
     "http://localhost:5500",   # Alternative
 ]
+
+
+STRIPE_PUBLIC_KEY =  "pk_test_51RqtQN2OImUrwDEcI6NnxaTpBFEheRZdVRrI0sR6iM1C9emM0IkGq3MkPmoK4WrUvvW12fqMXzxHWlaCw4rDXQ9N00uGGKkDwn"
+STRIPE_SECRET_KEY =  "sk_test_51RqtQN2OImUrwDEcJgXw0ewfwYYYhCWPwxZ7GnjQIocV9TgH8lTSIgG4gYPtNLMJj72ou5rCtxs1n4pjiy8bZUq900WvTYtcFq"
+STRIPE_WEBHOOK_SECRET = ""
