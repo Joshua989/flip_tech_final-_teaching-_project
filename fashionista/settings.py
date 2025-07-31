@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 
 from pathlib import Path
 from datetime import timedelta
+import os
+from dotenv import load_dotenv
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -155,6 +157,6 @@ CORS_ALLOWED_ORIGINS = [
 ]
 
 
-STRIPE_PUBLIC_KEY =  "pk_test_51RqtQN2OImUrwDEcI6NnxaTpBFEheRZdVRrI0sR6iM1C9emM0IkGq3MkPmoK4WrUvvW12fqMXzxHWlaCw4rDXQ9N00uGGKkDwn"
-STRIPE_SECRET_KEY =  "sk_test_51RqtQN2OImUrwDEcJgXw0ewfwYYYhCWPwxZ7GnjQIocV9TgH8lTSIgG4gYPtNLMJj72ou5rCtxs1n4pjiy8bZUq900WvTYtcFq"
-STRIPE_WEBHOOK_SECRET = ""
+load_dotenv()
+STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY')
+STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY')
